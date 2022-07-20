@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style="color: white;">{{title}}</h1>
+    {% for item in dictionary %}
+        <div class="product">
+            <h1>{{item.title}}</h1>
+            <h2 style="color: gold;">Оценка: {% if item.rating == 0.0 %}ещё нет оценок{% else %}{{item.rating}}{% endif %}</h2>
+            <table width="100%">
+                <tr>
+                    <th><a href="/product/{{type}}/{{item.title}}"><img src='/static/img/{{type}}/{{item.title}}.jpg'></a></th>
+                    <th width="20%"><h2>{{item.price}} руб.</h2><a href="/product/buy/{{type}}/{{item.title}}" class="btn btn-warning">Купить</a></th>
+                </tr>
+            </table>
+        </div>
+    {% endfor %}
+{% endblock %}

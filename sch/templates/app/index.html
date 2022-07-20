@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+    <table class="main_table table_td_space">
+        <tr>
+            <td class="product">
+                <a href="product/cpu"><h2 style="color: gray; text-align: center;">Процессоры</h2><img class="center_image" src="/static/img/cpu/cpu.png"></a>
+            </td>
+            <td class="product">
+                <a href="product/gpu"><h2 style="color: gray; text-align: center;">Видеокарты</h2><img class="center_image" src="/static/img/gpu/gpu.png"></a>
+            </td>
+            <td class="product">
+                <a href="product/motherboard"><h2 style="color: gray; text-align: center;">Материнские платы</h2><img class="center_image" src="/static/img/motherboard/motherboard.png"></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="product">
+                <h2 style="color: gray; text-align: center;">Оперативная память</h2>
+                <img class="center_image" src="/static/img/ram/ram.png">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <a href="/product/ram_dimm"><h4 style="color: gray; text-align: center;">DIMM</h4></a>
+                        </td>
+                        <td>
+                            <a href="/product/ram_so_dimm"><h4 style="color: gray; text-align: center;">SO-DIMM</h4></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="product">
+                <a href="/product/ssd"><h2 style="color: gray; text-align: center;">SSD</h2><img class="center_image" src="/static/img/ssd/ssd.png"></a>
+            </td>
+            <td class="product">
+                <a href="/product/hdd35"><h2 style="color: gray; text-align: center;">HDD"</h2><img class="center_image" src="/static/img/hdd35/hdd35.png"></a>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

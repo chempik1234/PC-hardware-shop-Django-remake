@@ -1,0 +1,127 @@
+body {
+    background-color: #333333;
+}
+
+.error {
+  color: red;
+  font-style: oblique;
+}
+
+.product {
+    width: 300px;
+    margin: 7px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #f0f0f0;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.main_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background: black;
+  width: 125%;
+  border: 2px solid black;
+  z-index: 1;
+}
+nav .dropdown-content a {
+  color: white;
+  border-radius: 5px;
+}
+nav .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+.star {
+  background: url(static/img/star.png) no-repeat;
+}
+
+td {
+  vertical-align: top;
+}
+
+.center_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.table_td_space {
+  border-spacing: 20px;
+  border-collapse: separate;
+}
+
+.td_border_white {
+  border: 2px dotted #FFFFFF;
+}
+
+.carousel {
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+.round_blue_button {
+  border-radius: 15px;
+  background-color: #008CBA;
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: auto;
+  padding: 10px;
+}
+
+.opinion {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.footer_ {
+  border-top: 2px solid white;
+  background-color: #33353D;
+}
+
+.footer-text {
+  color: white;
+}
+
+.text-150 {
+  font-size: 150%;
+}
+
+.footer-table-header {
+  font-size: 200%;
+  color: white;
+}
+
+.footer-links {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.opinion_img {
+    width: 500px;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
